@@ -29,7 +29,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             padding: const EdgeInsets.fromLTRB(24, 0, 24, 0),
             child: Column(children: [
               const Text(
-                'Добро пожаловать в наше приложение по ипотечным и финансовым расчетам.',
+                'Welcome to our mortgage and financial settlement app.',
                 textAlign: TextAlign.start,
                 style: TextStyle(
                     fontFamily: 'Roboto',
@@ -53,7 +53,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                           color: const Color(0xFFEB5757),
                           borderRadius: BorderRadius.circular(16)),
                       child: const Text(
-                        'Начать',
+                        'Start',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontFamily: 'Roboto',
@@ -64,7 +64,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 ),
               ),
               const Text(
-                'Условия использования /\nПолитика конфиденциальности',
+                'Terms of Use /\nPrivacy Policy',
                 style: TextStyle(
                     fontFamily: 'Roboto',
                     fontSize: 14,

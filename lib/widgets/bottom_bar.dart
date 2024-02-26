@@ -55,7 +55,7 @@ class _BottomNavBarState extends State<BottomBar> {
                           ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text('Главная',
+                      child: Text('Home',
                           style: TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.w500,
@@ -92,7 +92,7 @@ class _BottomNavBarState extends State<BottomBar> {
                           ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text('Аналитика',
+                      child: Text('Analytics',
                           style: TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.w500,
@@ -128,7 +128,7 @@ class _BottomNavBarState extends State<BottomBar> {
                           ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text('Калькулятор',
+                      child: Text('Calculator',
                           style: TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.w500,
@@ -164,7 +164,7 @@ class _BottomNavBarState extends State<BottomBar> {
                           ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text('Новости',
+                      child: Text('News',
                           style: TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.w500,
@@ -200,7 +200,7 @@ class _BottomNavBarState extends State<BottomBar> {
                           ),
                     Padding(
                       padding: const EdgeInsets.only(top: 5),
-                      child: Text('Настройки',
+                      child: Text('Settings',
                           style: TextStyle(
                               fontFamily: 'Roboto',
                               fontWeight: FontWeight.w500,

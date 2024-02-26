@@ -121,9 +121,11 @@ class _HomePageState extends State<HomePage> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  const Text(
-                                                    'Добавить доходы',
-                                                    style: TextStyle(
+                                                  Text(
+                                                    number == 0
+                                                        ? 'Add income'
+                                                        : 'Add expense',
+                                                    style: const TextStyle(
                                                         fontFamily: 'Roboto',
                                                         fontSize: 20,
                                                         fontWeight:
@@ -154,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Описание',
+                                                    'Description',
                                                     style: TextStyle(
                                                         fontFamily: 'Roboto',
                                                         fontSize: 16,
@@ -212,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Сумма',
+                                                    'Amount',
                                                     style: TextStyle(
                                                         fontFamily: 'Roboto',
                                                         fontSize: 16,
@@ -276,7 +278,7 @@ class _HomePageState extends State<HomePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Дата',
+                                                    'Date',
                                                     style: TextStyle(
                                                         fontFamily: 'Roboto',
                                                         fontSize: 16,
@@ -332,7 +334,7 @@ class _HomePageState extends State<HomePage> {
                                                                     textControllerIncomeDate
                                                                         .text = DateFormat(
                                                                             ' dd MMMM, yyyy',
-                                                                            'ru_RU')
+                                                                            'en_En')
                                                                         .format(
                                                                             _selectedDate);
                                                                   });
@@ -387,7 +389,7 @@ class _HomePageState extends State<HomePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Категории',
+                                                    'Category',
                                                     style: TextStyle(
                                                         fontFamily: 'Roboto',
                                                         fontSize: 16,
@@ -483,7 +485,7 @@ class _HomePageState extends State<HomePage> {
                                                           BorderRadius.circular(
                                                               16)),
                                                   child: const Text(
-                                                    'Добавить',
+                                                    'Add',
                                                     textAlign: TextAlign.center,
                                                     style: TextStyle(
                                                         fontFamily: 'Roboto',
@@ -500,7 +502,7 @@ class _HomePageState extends State<HomePage> {
                                   });
                             },
                             child: const Text(
-                              'Добавить',
+                              'Add',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   color: Color(0xFFEB5757),
@@ -518,7 +520,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'Общие доходы',
+                              'Total incomes',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 14,
@@ -535,8 +537,8 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               user.totalIncomes == null
-                                  ? '0 ₽'
-                                  : '${user.totalIncomes} ₽',
+                                  ? '0 \$'
+                                  : '${user.totalIncomes} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 40,
@@ -552,7 +554,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'Общие расходы',
+                              'Total expenses',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 14,
@@ -569,8 +571,8 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               user.totalExpenses == null
-                                  ? '0 ₽'
-                                  : '${user.totalExpenses} ₽',
+                                  ? '0 \$'
+                                  : '${user.totalExpenses} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 40,
@@ -617,7 +619,7 @@ class _HomePageState extends State<HomePage> {
                                       color: const Color(0xff999999),
                                     ),
                               const Text(
-                                'Доходы',
+                                'Incomes',
                               )
                             ]),
                           ),
@@ -633,7 +635,7 @@ class _HomePageState extends State<HomePage> {
                                       color: const Color(0xff999999),
                                     ),
                               const Text(
-                                'Расходы',
+                                'Expenses',
                               )
                             ]),
                           ),
@@ -654,7 +656,7 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 16, horizontal: 16),
                           child: Text(
-                            'Информации о доходах пока нет, нажмите кнопку "Добавить", что бы добавить доход.',
+                            'There is no information about income yet, click the "Add" button to add income.',
                             textAlign: TextAlign.start,
                             style: TextStyle(
                                 fontFamily: 'Roboto',
@@ -674,7 +676,7 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 16, horizontal: 16),
                           child: Text(
-                            'Информации о расходах пока нет, нажмите кнопку "Добавить", что бы добавить доход.',
+                            'There is no information about expenses yet, click the "Add" button to add income.',
                             textAlign: TextAlign.start,
                             style: TextStyle(
                                 fontFamily: 'Roboto',
@@ -770,7 +772,7 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 16),
                         child: Text(
-                          '${income.cost!.toStringAsFixed(0)} ₽',
+                          '${income.cost!.toStringAsFixed(0)} \$',
                           style: const TextStyle(
                               fontFamily: 'Roboto',
                               fontSize: 16,
@@ -778,7 +780,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Text(
-                        DateFormat(' dd MMMM, yyyy', 'ru_RU')
+                        DateFormat(' dd MMMM, yyyy', 'en_En')
                             .format(income.date!),
                         style: TextStyle(
                             fontFamily: 'Roboto',
@@ -852,7 +854,7 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: const EdgeInsets.only(bottom: 16),
                         child: Text(
-                          '${expense.cost!.toStringAsFixed(0)} ₽',
+                          '${expense.cost!.toStringAsFixed(0)} \$',
                           style: const TextStyle(
                               fontFamily: 'Roboto',
                               fontSize: 16,
@@ -860,7 +862,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       Text(
-                        DateFormat(' dd MMMM, yyyy', 'ru_RU')
+                        DateFormat(' dd MMMM, yyyy', 'en_En')
                             .format(expense.date!),
                         style: TextStyle(
                             fontFamily: 'Roboto',

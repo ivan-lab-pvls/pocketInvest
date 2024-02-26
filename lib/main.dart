@@ -7,7 +7,7 @@ int? initScreen;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences preferences = await SharedPreferences.getInstance();
-  initializeDateFormatting('ru_RU');
+  initializeDateFormatting('en_En');
   initScreen = preferences.getInt('initScreen');
   await preferences.setInt('initScreen', 1);
 

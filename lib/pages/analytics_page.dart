@@ -59,7 +59,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'Аналитика',
+                              'Analytics',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 40,
@@ -106,28 +106,28 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                             Tab(
                               child: Row(children: [
                                 Text(
-                                  'Сегодня',
+                                  'Today',
                                 )
                               ]),
                             ),
                             Tab(
                               child: Row(children: [
                                 Text(
-                                  'Неделя',
+                                  'Week',
                                 )
                               ]),
                             ),
                             Tab(
                               child: Row(children: [
                                 Text(
-                                  'Месяц',
+                                  'Month',
                                 )
                               ]),
                             ),
                             Tab(
                               child: Row(children: [
                                 Text(
-                                  'Год',
+                                  'Year',
                                 )
                               ]),
                             ),
@@ -165,14 +165,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Общая сумма',
+                              'Total amount',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes() - getAllExpenses()} ₽',
+                              '${getAllIncomes() - getAllExpenses()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -188,14 +188,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Доходы',
+                              'Incomes',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes()} ₽',
+                              '${getAllIncomes()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -219,7 +219,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Расходы',
+                              'Expenses',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
@@ -227,8 +227,8 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                             ),
                             Text(
                               getAllExpenses() != 0
-                                  ? '-${getAllExpenses()} ₽'
-                                  : '0 ₽',
+                                  ? '-${getAllExpenses()} \$'
+                                  : '0 \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -258,14 +258,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Общая сумма',
+                              'Total amount',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes() - getAllExpenses()} ₽',
+                              '${getAllIncomes() - getAllExpenses()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -281,14 +281,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Доходы',
+                              'Incomes',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes()} ₽',
+                              '${getAllIncomes()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -312,7 +312,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Расходы',
+                              'Expenses',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
@@ -320,8 +320,8 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                             ),
                             Text(
                               getAllExpenses() != 0
-                                  ? '-${getAllExpenses()} ₽'
-                                  : '0 ₽',
+                                  ? '-${getAllExpenses()} \$'
+                                  : '0 \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -351,14 +351,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Общая сумма',
+                              'Total amount',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes() - getAllExpenses()} ₽',
+                              '${getAllIncomes() - getAllExpenses()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -374,14 +374,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Доходы',
+                              'Incomes',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes()} ₽',
+                              '${getAllIncomes()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -405,7 +405,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Расходы',
+                              'Expenses',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
@@ -413,8 +413,8 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                             ),
                             Text(
                               getAllExpenses() != 0
-                                  ? '-${getAllExpenses()} ₽'
-                                  : '0 ₽',
+                                  ? '-${getAllExpenses()} \$'
+                                  : '0 \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -442,14 +442,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Общая сумма',
+                              'Total amount',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes() - getAllExpenses()} ₽',
+                              '${getAllIncomes() - getAllExpenses()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -465,14 +465,14 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Доходы',
+                              'Incomes',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
                                   fontFamily: 'Roboto'),
                             ),
                             Text(
-                              '${getAllIncomes()} ₽',
+                              '${getAllIncomes()} \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,
@@ -496,7 +496,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             const Text(
-                              'Расходы',
+                              'Expenses',
                               style: TextStyle(
                                   color: Color(0xFF828282),
                                   fontSize: 16,
@@ -504,8 +504,8 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                             ),
                             Text(
                               getAllExpenses() != 0
-                                  ? '-${getAllExpenses()} ₽'
-                                  : '0 ₽',
+                                  ? '-${getAllExpenses()} \$'
+                                  : '0 \$',
                               style: const TextStyle(
                                   fontFamily: 'Roboto',
                                   fontSize: 16,

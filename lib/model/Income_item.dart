@@ -1,8 +1,8 @@
 enum ECategoryIncomeType {
-  cash("Заработная плата"),
-  investemnts("Инвестиции"),
-  rent("Рента"),
-  other("Другое");
+  cash("Salary"),
+  investemnts("Investments"),
+  rent("Rent"),
+  other("Other");
 
   const ECategoryIncomeType(this.text);
   final String text;

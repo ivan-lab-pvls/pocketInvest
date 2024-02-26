@@ -26,7 +26,7 @@ class SettingsPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      'Настройки',
+                      'Settings',
                       style: TextStyle(
                           fontFamily: 'Roboto',
                           fontSize: 40,
@@ -56,7 +56,7 @@ class SettingsPage extends StatelessWidget {
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image.asset('assets/restart.png'),
                   const Text(
-                    'Сбросить сумму',
+                    'Reset amount',
                     style: TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 16,
@@ -70,7 +70,8 @@ class SettingsPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(16, 13, 16, 13),
             child: InkWell(
               onTap: () {
-                Share.share('Add your profit and check your mortgage in one app! Welcome - ');
+                Share.share(
+                    'Add your profit and check your mortgage in one app! Welcome - ');
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,7 +83,7 @@ class SettingsPage extends StatelessWidget {
                         width: 8,
                       ),
                       const Text(
-                        'Поделиться с друзьями',
+                        'Share with friends',
                         style: TextStyle(fontFamily: 'Roboto', fontSize: 16),
                       )
                     ],
@@ -105,9 +106,9 @@ class SettingsPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const trms(
-                            datatrms: 'https://docs.google.com/document/d/1pzCpzNpCY3M69pF6bMOPK2Smeus0ewfoJXazFD80nlQ/edit?usp=sharing',
+                      builder: (BuildContext context) => const trms(
+                            datatrms:
+                                'https://docs.google.com/document/d/1pzCpzNpCY3M69pF6bMOPK2Smeus0ewfoJXazFD80nlQ/edit?usp=sharing',
                           )),
                 );
               },
@@ -121,7 +122,7 @@ class SettingsPage extends StatelessWidget {
                         width: 8,
                       ),
                       const Text(
-                        'Политика конфиденциальности',
+                        'Privacy policy',
                         style: TextStyle(fontFamily: 'Roboto', fontSize: 16),
                       )
                     ],
@@ -144,9 +145,9 @@ class SettingsPage extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const trms(
-                            datatrms: 'https://docs.google.com/document/d/1AH88foLPk5OSBBdmDSctrUoftG3mQComXlz9Cc5PoKw/edit?usp=sharing',
+                      builder: (BuildContext context) => const trms(
+                            datatrms:
+                                'https://docs.google.com/document/d/1AH88foLPk5OSBBdmDSctrUoftG3mQComXlz9Cc5PoKw/edit?usp=sharing',
                           )),
                 );
               },
@@ -160,7 +161,7 @@ class SettingsPage extends StatelessWidget {
                         width: 8,
                       ),
                       const Text(
-                        'Условия эксплуатации',
+                        'Terms of use',
                         style: TextStyle(fontFamily: 'Roboto', fontSize: 16),
                       )
                     ],

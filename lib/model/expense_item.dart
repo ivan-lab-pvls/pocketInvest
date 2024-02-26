@@ -1,8 +1,8 @@
 enum ECategoryExpenseType {
-  food("Еда"),
-  entertainment("Закупки"),
-  financialOperations("Транспорт"),
-  other("Другое");
+  food("Food"),
+  entertainment("Purchases"),
+  financialOperations("Transport"),
+  other("Other");
 
   const ECategoryExpenseType(this.text);
   final String text;

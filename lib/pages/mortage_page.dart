@@ -40,13 +40,15 @@ class _MortgePageState extends State<MortgePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text(
-                            'Ипотечный\nкалькулятор',
-                            style: TextStyle(
-                                fontFamily: 'Roboto',
-                                fontSize: 40,
-                                fontWeight: FontWeight.w600,
-                                height: 48 / 40),
+                          Flexible(
+                            child: Text(
+                              'Mortgage calculator',
+                              style: TextStyle(
+                                  fontFamily: 'Roboto',
+                                  fontSize: 40,
+                                  fontWeight: FontWeight.w600,
+                                  height: 48 / 40),
+                            ),
                           ),
                         ],
                       ),
@@ -63,7 +65,7 @@ class _MortgePageState extends State<MortgePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'Стоимость имущества',
+                        'Real estate value',
                         style: TextStyle(
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w500,
@@ -109,7 +111,7 @@ class _MortgePageState extends State<MortgePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        'Первоначальный взнос',
+                        'Initial contribution',
                         style: TextStyle(
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w500,
@@ -159,7 +161,7 @@ class _MortgePageState extends State<MortgePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              'Срок',
+                              'Mortage term',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   fontWeight: FontWeight.w500,
@@ -207,7 +209,7 @@ class _MortgePageState extends State<MortgePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              '% Ставка',
+                              'Interest rate %',
                               style: TextStyle(
                                   fontFamily: 'Roboto',
                                   fontWeight: FontWeight.w500,
@@ -334,7 +336,7 @@ class _MortgePageState extends State<MortgePage> {
                                                 CrossAxisAlignment.start,
                                             children: [
                                               const Text(
-                                                'Ипотечный калькулятор\nрассчитал',
+                                                'Mortgage calculator\ncalculated',
                                                 style: TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 20,
@@ -367,7 +369,7 @@ class _MortgePageState extends State<MortgePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Процентная ставка',
+                                                    'Interest rate',
                                                     style: TextStyle(
                                                         color:
                                                             Color(0xFF828282),
@@ -414,7 +416,7 @@ class _MortgePageState extends State<MortgePage> {
                                                     MainAxisAlignment.start,
                                                 children: [
                                                   Text(
-                                                    'Основной долг',
+                                                    'Credit amount',
                                                     style: TextStyle(
                                                         color:
                                                             Color(0xFF828282),
@@ -458,14 +460,14 @@ class _MortgePageState extends State<MortgePage> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               const Text(
-                                                'Основной долг',
+                                                'Credit amount',
                                                 style: TextStyle(
                                                     color: Color(0xFF828282),
                                                     fontSize: 16,
                                                     fontFamily: 'Roboto'),
                                               ),
                                               Text(
-                                                '${mortage.creditAmount!.toStringAsFixed(0)} ₽',
+                                                '${mortage.creditAmount!.toStringAsFixed(0)} \$',
                                                 style: const TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 16,
@@ -491,14 +493,14 @@ class _MortgePageState extends State<MortgePage> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               const Text(
-                                                'Процентная ставка',
+                                                'Interest rate',
                                                 style: TextStyle(
                                                     color: Color(0xFF828282),
                                                     fontSize: 16,
                                                     fontFamily: 'Roboto'),
                                               ),
                                               Text(
-                                                '${mortage.accruedInterest!.toStringAsFixed(0)} ₽',
+                                                '${mortage.accruedInterest!.toStringAsFixed(0)} \$',
                                                 style: const TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 16,
@@ -516,47 +518,14 @@ class _MortgePageState extends State<MortgePage> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               const Text(
-                                                'Ежемесячная оплата',
+                                                'Mounthly payment',
                                                 style: TextStyle(
                                                     color: Color(0xFF828282),
                                                     fontSize: 16,
                                                     fontFamily: 'Roboto'),
                                               ),
                                               Text(
-                                                '${mortage.mountlyPayment!.toStringAsFixed(0)} ₽',
-                                                style: const TextStyle(
-                                                    fontFamily: 'Roboto',
-                                                    fontSize: 16,
-                                                    fontWeight:
-                                                        FontWeight.w600),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                        const Padding(
-                                          padding: EdgeInsets.only(
-                                              bottom: 8, left: 16, right: 16),
-                                          child: Divider(
-                                            color: Color(0xFFD6D6D8),
-                                            height: 1,
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.only(
-                                              right: 16, left: 16, bottom: 8),
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              const Text(
-                                                'Начисленные проценты',
-                                                style: TextStyle(
-                                                    color: Color(0xFF828282),
-                                                    fontSize: 16,
-                                                    fontFamily: 'Roboto'),
-                                              ),
-                                              Text(
-                                                '${mortage.accruedInterest!.toStringAsFixed(0)} ₽',
+                                                '${mortage.mountlyPayment!.toStringAsFixed(0)} \$',
                                                 style: const TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 16,
@@ -582,14 +551,47 @@ class _MortgePageState extends State<MortgePage> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               const Text(
-                                                'Долг + проценты',
+                                                'Accrued interest',
                                                 style: TextStyle(
                                                     color: Color(0xFF828282),
                                                     fontSize: 16,
                                                     fontFamily: 'Roboto'),
                                               ),
                                               Text(
-                                                '${(mortage.accruedInterest! + mortage.creditAmount!).toStringAsFixed(0)} ₽',
+                                                '${mortage.accruedInterest!.toStringAsFixed(0)} \$',
+                                                style: const TextStyle(
+                                                    fontFamily: 'Roboto',
+                                                    fontSize: 16,
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        const Padding(
+                                          padding: EdgeInsets.only(
+                                              bottom: 8, left: 16, right: 16),
+                                          child: Divider(
+                                            color: Color(0xFFD6D6D8),
+                                            height: 1,
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                              right: 16, left: 16, bottom: 8),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              const Text(
+                                                'Debt + interest',
+                                                style: TextStyle(
+                                                    color: Color(0xFF828282),
+                                                    fontSize: 16,
+                                                    fontFamily: 'Roboto'),
+                                              ),
+                                              Text(
+                                                '${(mortage.accruedInterest! + mortage.creditAmount!).toStringAsFixed(0)} \$',
                                                 style: const TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 16,
@@ -613,7 +615,7 @@ class _MortgePageState extends State<MortgePage> {
                             color: const Color(0xFFEB5757),
                             borderRadius: BorderRadius.circular(16)),
                         child: const Text(
-                          'Рассчитать',
+                          'Calculate',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontFamily: 'Roboto',
